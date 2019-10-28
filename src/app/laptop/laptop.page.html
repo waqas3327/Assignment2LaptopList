@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="laptopslist"></ion-back-button>
+
+    </ion-buttons>
+    <ion-title> Laptop</ion-title>
+    <!-- (click)="deleteLaptop()" -->
+    <ion-button slot="end" (click)="deleteLaptop()">
+      <ion-icon name="close"></ion-icon>
+    </ion-button>
+
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="http://pngimg.com/uploads/laptop/laptop_PNG5939.png" height="250px" />
+    <ion-card-header>
+      <ion-card-title>{{singleLaptop?.model}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{singleLaptop?.gen}}
+
+
+    </ion-card-content>
+
+
+  </ion-card>
+</ion-content>
